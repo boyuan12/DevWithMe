@@ -14,3 +14,4 @@
         <button type="submit" name="submit">SEND MAIL
     </main>
   </body>
+<html>

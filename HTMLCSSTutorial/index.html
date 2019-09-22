@@ -14,6 +14,7 @@
     <li><a class="nav-link" href="#Video1">HTML Basics 1 | Video 1</a></li>
     <li><a class="nav-link" href="#Video2">HTML Basics 2 | Video 2</a></li>
     <li><a class="nav-link" href="#Video3">Create Table of Contents | Video 3</a></li>
+	  <li><a class="nav-link" href="#Video4">Form in HTML | Video 4</a></li>
   </ul>
 </nav>
     <main id="main-doc">
@@ -135,7 +136,7 @@
 				<iframe src="https://youtube.com/embed/1EFmqEL0OHE" width="560" height="315" frameborder="0"></iframe>
 				<p>So, a book can't without a table of contents. Same for your webpage, today, we will talk about how to link into different section to webpage.</p>
 				<p>So, you need to make sure you give each section that you want to link in table of contents an individual id, then you will create an unordered list. Then, create &lta href = ""&gt with #id. And you finished!</p>
-				<p>That's sounds complicated, isn't it? Well, start to look at this codepen, see if you can figure it out, or feel still a lit bit confusing, you can re-watch the video or comment in the video.<//p>
+				<p>That's sounds complicated, isn't it? Well, start to look at this codepen, see if you can figure it out, or feel still a lit bit confusing, you can re-watch the video or comment in the video.</p>
 			  <p class="codepen" data-height="438" data-theme-id="0" data-default-tab="html,result" data-user="boyuan12" data-slug-hash="aboGbER" data-preview="true" style="height: 438px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Webpage">
   <span>See the Pen <a href="https://codepen.io/boyuan12/pen/aboGbER">
   Webpage</a> by boyuan12 (<a href="https://codepen.io/boyuan12">@boyuan12</a>)
@@ -143,6 +144,47 @@
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 			</article>
+	      <article>
+		      <h1 id="Video4" class="video-header">Form in HTML | Video 4</h1>
+			  <iframe src="https://www.youtube.com/embed/nqWMy1uOC6w" width="560" height="315" frameborder="0"></iframe>
+		      <p>We will learn how to create form elements, such as text field, radio button, checkboxes, with placeholder and required</p>
+			  <code>&ltinput type="text"&gt</code> This created a text field.
+			  <code>&ltlabel for="language"&gt&ltinput id="language" type="checkbox" name="language"&gt HTML&lt/label&gt</code> This created a checkboxes. Label declared what is these checkboxes for, id is for specific style to specific checkbox, and name can differentiate between checkboxes in same group.
+			  <code>&ltlabel for="experience"&gt&ltinput id="experience" type="radio" name="experience"&gtNo&lt/label&gt</code> This create radio button, it's actually nearly as same as checkbox, except type is radio.
+			  <code>&ltbutton type="submit"&gtthis button submits the form&lt/button&gt</code> This create a submit button.
+			  <p>How can I required an option? Add <span id="inline-code">required</span> at the end of the option that you want to let that to be required to fill in.</p>
+			  <p>How can I add pre-selected item? Add <span id="inline-code">check</span> at the end of the checkbox or radio button you want to selected on.
+			  <p>The following is an example form, you can also find it on this <a href="https://codepen.io/boyuan12/pen/aboGbER">pen</a>.</p>
+			  <h2>Example Form</h2>
+    <form action="example.php">
+      <label>Name:
+        <input type="text" placeholder="Enter your Name here: " required>
+      </label> <br />
+      What language do you want to learn?
+      <label for="language" ><input id="language" type="checkbox" name="language">HTML</label>
+      <label for="language"><input id="language" type="checkbox" name="language">CSS</label>
+      <label for="language"><input id="language" type="checkbox" name="language">Javascript</label>
+      <label for="language"><input id="language" type="checkbox" name="language">Python</label>
+      <label for="language"><input id="language" type="checkbox" name="language">PHP</label> <br />
+       <label for="experience">
+         How many experience do you have in any of the programming language?
+	      <input id="experience" type="radio" name="experience" required check>No experience at all
+      </label>
+      	<label for="experience">
+	  <input id="experience" type="radio" name="experience">A little experience
+</label>
+      	<label for="experience">
+	  <input id="experience" type="radio" name="experience">Some experience
+</label>
+      	<label for="experience">
+	  <input id="experience" type="radio" name="experience">A lot of experience
+</label>
+      	<label for="experience">
+	  <input id="experience" type="radio" name="experience">Proficient at at least 1 programming language
+      </label> <br />
+        <button type="submit">Submit</button>
+    </form>
+	      </article>
 		  </section>
 </main>
   </body>

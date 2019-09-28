@@ -2,7 +2,6 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://boyuan12.github.io/DevWithMe/HTMLCSSTutorial/style.css">
-     /*some section of the style codes are based on freeCodeCamp*/
   </head>
   <body>
   <nav id="navbar">
@@ -14,7 +13,9 @@
     <li><a class="nav-link" href="#Video1">HTML Basics 1 | Video 1</a></li>
     <li><a class="nav-link" href="#Video2">HTML Basics 2 | Video 2</a></li>
     <li><a class="nav-link" href="#Video3">Create Table of Contents | Video 3</a></li>
-	  <li><a class="nav-link" href="#Video4">Form in HTML | Video 4</a></li>
+	<li><a class="nav-link" href="#Video4">Form in HTML | Video 4</a></li>
+  	<li><a class="nav-link" href="#Video5">Introduction to CSS | Video 5</a></li>
+	<li><a class="nav-link" href="#Video6">BootStrap & Sass | Video 6</a></li>
   </ul>
 </nav>
     <main id="main-doc">
@@ -186,6 +187,38 @@
     </form>
 	      </article>
 		  </section>
+	      <section>
+		      <article>
+				  <h1 class="video-header" id="Video5">Intro to CSS | Video 5</h1>
+				  <iframe src="https://youtube.com/embed/1z93_gKWTQM" width="560" height="315" frameborder="0"></iframe>
+				  <h2>So. CSS</h2>
+				  <p>Today we are going to discover features in CSS, so we can make our website more stylish. CSS is stands for Cascading Style Sheet</p>
+				  <h2>Where?</h2>
+				  <p>So where do we add CSS codes? There are three options you can choose:</p>
+				  <ol>
+					  <li>Added straight in style tag - This way is most convenient way to do, but in organization, it also can make your HTML code hard to find. So what you will basically do, is to add &ltstyle&gt tag inside of &lthead&gt tag. Then write your css codes and properties inside of &ltstyle&gt tag</li>
+					  <li>Use inline style (I forgot to mention this in the video). you will add <span style="font-family: monospace;">style="Put your CSS Properties here"</span> at the end of each tag but inside of &gt. </li>
+					  <li>Or using external script - so you are going to create external CSS file, remember using .css as extention. Then you are going to copy following code in &ltlink rel = "stylesheet" type = "text/css" href = "myStyle.css"&gt. You are going to change the file address into myStyle.css. You can use online script if you want, which I will go over how to set them up in next video.</li>
+				  </ol>
+				  <h2>Some properties:</h2>
+				  <code>background-color:</code> is using to change background color of certain tag. You CAN'T use this for "normal" tags (such as header tags, paragraph tags), you must use div or span tag. 
+				  <code>font-size:</code> is used to specify how large you want the text to be, remember, <em>No Naked Number</em>, which means you must include units at the end, such as px, em, vp, we will get to them later.
+				  <code>font-family:</code> is used to specify which font you want to use. There are some default font that browser can understand, such as sans-serif, serif, monospace, arial, etc.
+				  <br>However, sometime these default fonts won't be enough, that where Google Fonts come in handy. Go to <a href="fonts.google.com">fonts.google.com</a>, then choose the font you want to use, copy the font's codes into your CSS file or to your HTML file header.
+				  <code>color:</code> this is use to change the text color of certain text.
+				  <em>P.S. I messed up, please watch the Video 7 before watch this one! I should talk about CSS Syntax first!</em>
+		      </article>
+	      </section>
+		  <article>
+			  <h1 class="video-header" id="#Video6">Set up BootStrap and Sass</h1>
+			  <iframe src="https://youtube.com/embed/GVr150fLR5U" width="560" height="315" frameborder="0"></iframe>
+			  <h2>BootStrap</h2>
+			  <p>Go to <a href="getbootstrap.com">getbootstrap.com</a> (not bootstrap.com), then scroll down and looking for bootstrap CDN, copy the codes for CSS only.</p>
+			  <p>You can paste the codes into your head of your HTML file.</p>
+			  <h2>Sass</h2>
+			  <p>This is a enhancement feature for your CSS style, there will be a tutorial after JavaScript Tutorial. You can download this if you want, if you want, please follow the following directions: </p>
+			  <p>Go to <a href="sass-lang.com">sass-lang.com</a> (YES, not sass.com), then you can download via command-line (which I'm going to get to there in Sass tutorial) or just download like a software.</p>
+		  </article>
 </main>
   </body>
 </html>

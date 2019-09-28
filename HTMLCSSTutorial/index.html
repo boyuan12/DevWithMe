@@ -2,6 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://boyuan12.github.io/DevWithMe/HTMLCSSTutorial/style.css">
+	  <style>
+		  #box {
+		  	border: 1px solid black;
+		  }
+	  </style>
   </head>
   <body>
   <nav id="navbar">
@@ -16,6 +21,7 @@
 	<li><a class="nav-link" href="#Video4">Form in HTML | Video 4</a></li>
   	<li><a class="nav-link" href="#Video5">Introduction to CSS | Video 5</a></li>
 	<li><a class="nav-link" href="#Video6">BootStrap & Sass | Video 6</a></li>
+	<li><a class="nav-link" href="#Video7">CSS Syntax | Video 7</a></li>
   </ul>
 </nav>
     <main id="main-doc">
@@ -205,7 +211,7 @@
 				  <code>font-size:</code> is used to specify how large you want the text to be, remember, <em>No Naked Number</em>, which means you must include units at the end, such as px, em, vp, we will get to them later.
 				  <code>font-family:</code> is used to specify which font you want to use. There are some default font that browser can understand, such as sans-serif, serif, monospace, arial, etc.
 				  <br>However, sometime these default fonts won't be enough, that where Google Fonts come in handy. Go to <a href="fonts.google.com">fonts.google.com</a>, then choose the font you want to use, copy the font's codes into your CSS file or to your HTML file header.
-				  <code>color:</code> this is use to change the text color of certain text.
+				  <code>color:</code> this is use to change the text color of certain text. There are certain default value that computer can understand, such that you can type in plaintext English, else you will need to use RGB selector. Or Red Green and Blue, here is an example of selector: 
 				  <em>P.S. I messed up, please watch the Video 7 before watch this one! I should talk about CSS Syntax first!</em>
 		      </article>
 	      </section>
@@ -218,6 +224,34 @@
 			  <h2>Sass</h2>
 			  <p>This is a enhancement feature for your CSS style, there will be a tutorial after JavaScript Tutorial. You can download this if you want, if you want, please follow the following directions: </p>
 			  <p>Go to <a href="https://www.sass-lang.com">sass-lang.com</a> (YES, not sass.com), then you can download via command-line (which I'm going to get to there in Sass tutorial) or just download like a software.</p>
+		  </article>
+		  <article>
+			  <h1 class="video-header" id="#Video7">CSS Syntax | Video 7</h1>
+			  <iframe src="https://youtube.com/embed/d1h7rUJaV7o" width="560" height="315" frameborder="0"></iframe>
+			  <img src="https://www.w3schools.com/css/selector.gif" alt="CSS Syntax Image By W3Schools">
+			  <br>Image above was created by W3Schools
+			  <p>As you can see, each CSS codes was made up by 2 big parts: <b>Selector</b> and <b>Declaration</b>
+			  <p>Let's talk about selector first, There are generally 4 types of selector. They are: </p>
+			  <ul>
+				  <li>Universal Selector: This selector select everything on the webpage. For selector, you will add * .</li>
+				  <li>Tag Selector: This is most commonly used selector, you just type the tag name that you want to get selected, and you are done!</li>
+				  <li>Class/ID Selector: If you want to style certain class or id, it also fine! For class, add . in front of your class name as your selector. For id, add # in front of your id name as your selector.</li>
+				  <li>Nested Selector: If you want to select a div tag inside of a div tag, you will be using div > div as your selector.</li>
+			  </ul>
+			  <p>What is inside of Declaration? Well, 2 things: <b>property</b> and <b>value</b>.</p>
+			  <p>For example if I want to change all paragraph tag to color orange, color will be the property and orange will be the value.</p>
+		  </article>
+		  <article>
+			  <h1 class="video-header" id="#Video8">Box Model | Video 8</h1>
+			  <iframe src="https://youtube.com/embed/Bmh1BNtmac8" width="560" height="315" frameborder="0"></iframe>
+			  <h2>What is a <span id="box"Box Model</span>?</h2>
+			  <p>Everything in CSS has a box around it. Even it's doesn't appear. Box Model can helps us understand how box in CSS works and padding, border and margin</p>
+			  <h2>General Relationship Between Padding, Border and Margin</h2>
+			  <img src="https://www.kasandbox.org/programming-images/misc/boxmodel.png">
+			  <p>So, from the picture we can see the relationship between padding, border and margin: padding is around of the content box; border been created based on the padding box and margin is created based on how wide the border is.</p>
+			  <h2>How to use them?</h2>
+			  <p>You can specify all of them using padding: ___px and margin ___px. However, border is a little weird, it takes 3 values to create a border, you must specify them in this order: how wide you want the border to be (___px), what format did you want to use (solid, dashed, dotted, etc. You can find all of them by click this <a href="https://www.w3schools.com/css/css_border.asp">link</a>)</p>
+			  There is also a great Khan Academy Lesson, if you want to take a look, click this <a href="https://www.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-box-model>link</a>.
 		  </article>
 </main>
   </body>

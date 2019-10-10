@@ -217,7 +217,7 @@
 		      </article>
 	      </section>
 		  <article>
-			  <h1 class="video-header" id="#Video6">Set up BootStrap and Sass</h1>
+			  <h1 class="video-header" id="Video6">Set up BootStrap and Sass</h1>
 			  <iframe src="https://youtube.com/embed/GVr150fLR5U" width="560" height="315" frameborder="0"></iframe>
 			  <h2>BootStrap</h2>
 			  <p>Go to <a href="https://www.getbootstrap.com">getbootstrap.com</a> (not bootstrap.com), then scroll down and looking for bootstrap CDN, copy the codes for CSS only.</p>
@@ -227,7 +227,7 @@
 			  <p>Go to <a href="https://www.sass-lang.com">sass-lang.com</a> (YES, not sass.com), then you can download via command-line (which I'm going to get to there in Sass tutorial) or just download like a software.</p>
 		  </article>
 		  <article>
-			  <h1 class="video-header" id="#Video7">CSS Syntax | Video 7</h1>
+			  <h1 class="video-header" id="Video7">CSS Syntax | Video 7</h1>
 			  <iframe src="https://youtube.com/embed/d1h7rUJaV7o" width="560" height="315" frameborder="0"></iframe>
 			  <img src="https://www.w3schools.com/css/selector.gif" alt="CSS Syntax Image By W3Schools">
 			  <br>Image above was created by W3Schools
@@ -243,7 +243,7 @@
 			  <p>For example if I want to change all paragraph tag to color orange, color will be the property and orange will be the value.</p>
 		  </article>
 		  <article>
-			  <h1 class="video-header" id="#Video8">Box Model | Video 8</h1>
+			  <h1 class="video-header" id="Video8">Box Model | Video 8</h1>
 			  <iframe src="https://youtube.com/embed/Bmh1BNtmac8" width="560" height="315" frameborder="0"></iframe>
 			  <h2>What is a <span id="box">Box Model</span>?</h2>
 			  <p>Everything in CSS has a box around it. Even it's doesn't appear. Box Model can helps us understand how box in CSS works and padding, border and margin</p>
@@ -253,6 +253,99 @@
 			  <h2>How to use them?</h2>
 			  <p>You can specify all of them using padding: ___px and margin ___px. However, border is a little weird, it takes 3 values to create a border, you must specify them in this order: how wide you want the border to be (___px), what format did you want to use (solid, dashed, dotted, etc. You can find all of them by click this <a href="https://www.w3schools.com/css/css_border.asp">link</a>)</p>
 			  There is also a great Khan Academy Lesson, if you want to take a look, click this <a href="https://www.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-box-model">link</a>.
+		  </article>
+	     <article>
+			 <h1 class="video-header" id="Video9">Flexbox | Video 9</h1>
+			 <iframe width="560" height="315" src="https://www.youtube.com/embed/cQNVLFQHofU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			 <h2>Flexbox Properties</h2>
+			 <p>So flexbox is somewhat like box model, understand this concept may help you develop more responsive webpage. It will auto-adjust the width and height for you.</p>
+			 <p>There are four kinds of layout in the webpage</p>
+			 <ul>
+				 <li>Block, for sections in a webpage</li>
+				 <li>Inline, for text</li>
+				 <li>Table, for two-dimensional table data</li>
+				 <li>Postioned, for explicit position of an element</li>
+			 </ul>
+			 <p>Click following pen to see what is an example of flexbox:</p>
+			 <p class="codepen" data-height="288" data-theme-id="0" data-default-tab="css,result" data-user="boyuan12" data-slug-hash="eYYNawy" style="height: 288px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="eYYNawy">
+  <span>See the Pen <a href="https://codepen.io/boyuan12/pen/eYYNawy">
+  eYYNawy</a> by boyuan12 (<a href="https://codepen.io/boyuan12">@boyuan12</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+			 <h2>Properties</h2>
+			 <p>Let's dig in deeper to discover properties and values for flexbox! You are welcome to paste the code into a code editor to see the effect!</p>
+			 <h3>flex-direction</h3>
+			 <p><code>flex-direction: column</code> The column value stacks the flex items vertically (from top to bottom)</p>
+			 <p><code>flex-direction: column-reverse</code> The column-reverse value stacks the flex items vertically (but from bottom to top)</p>
+			 <p><code>flex-direction: row</code> The row value stacks the flex items horizontally (from left to right)</p>
+			 <p><code>flex-direction: row-reverse</code> The row-reverse value stacks the flex items horizontally (and you guessed it, from right to left)</p>
+			 <h3>flex-wrap</h3>
+			 <p><code>flex-wrap: wrap</code> The wrap value specifies that the flex items will wrap if necessary.</p>
+			 <p><code>flex-wrap: nowrap</code> The nowrap value specifies that the flex items will not wrap (default).</p>
+			 <p><code>flex-wrap: wrap-reverse</code> The wrap-reverse value specified that the flexible item will wrap if neccessary, in reverse order.</p>
+			 <h3>flex-flow property</h3>
+			 <p><code>flex-flow: row wrap</code> This is shorthand for setting both flex-direction and flex-wrap properties.</p>
+			 <h3>justify-content</h3>
+			 <p><code>justify-content: center</code> The center value aligns the flex items the center of the container.</p>
+			 <p><code>justify-content: flex-start</code> The flex-start value aligns the flex items at the beginning of the container (this is default)</p>
+			 <p><code>justify-content: flex-end</code> The flex-end value aligns the flex items at the end of the container</p>
+			 <p><code>justify-content: space around</code> and <code>justify-content: space-between</code>.</p>
+			 <em>All flexbox lesson on the website was based on W3Schools.com's flexbox section. Click this <a href="https://www.w3schools.com/css/css3_flexbox.asp">link</a> to see original contents.</em>
+		  </article>
+		  <article>
+			  <h1 class="video-header" id="Video10">Flexbox 2 | Video 10<h1>
+				  <h2>Recap</h2>
+				  <p>Let's do a quick recap, in last video, we did 4 properties, if you want to see the detail, scroll up to see Flexbox 1 | Video 9</p>
+				  <h2>align-items</h2>
+				  <p>This property is used to align the flex items vertically.</p>
+				  <p><code>align-items: center</code> The center value aligns the flex items in the middle of the container.</p>
+				  <p><code>align-items: flex-start</code> The flex-start value aligns the flex items at the top of the container</p>
+				  <p><code>align-items: flex-end</code> The flex-end value aligns the flex items at the bottom of the container</p>
+				  <p><code>align-items: stretch</code> The stretch value stretches the flex items to fill the container (this is default).</p>
+				  <p><code>align-items: baseline</code> The baseline value aligns the flex items such as their baselines aligns (P.S. Baseline aligned at the bottom of the words)</p>
+				  <h2>align-content</h2>
+				  <p>(The align-content property is used to align the flex lines.</p>
+				  <p><code>align-content: space-between</code>The space-between value displays the flex lines with equal space between them</p>
+				  <p><code>align-content: space-around</code>The space-around value displays the flex lines with space before, between, and after them</p>
+				  <p><code>align-content: stretch</code>The stretch value stretches the flex lines to take up the remaining space (this is default)</p>
+				  <p><code>align-content: center</code>The center value displays display the flex lines in the middle of the container</p>
+				  <p><code>align-content: flex-start</code>The flex-start value displays the flex lines at the start of the container</p>
+				  <p><code>align-content: flex-end</code>The flex-end value displays the flex lines at the end of the container</p>
+				  <h2>Perfect Centering</h2>
+				  <p>HINT: In order to create a perfect centering circle, you will use justify-content and align-items property.</p>
+				  <p>Click run on the following pen to check whether you get it or not.</p>
+				  <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="boyuan12" data-slug-hash="mddJNLX" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="mddJNLX">
+  <span>See the Pen <a href="https://codepen.io/boyuan12/pen/mddJNLX">
+  mddJNLX</a> by boyuan12 (<a href="https://codepen.io/boyuan12">@boyuan12</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+				  <em>All flexbox lesson on the website was based on W3Schools.com's flexbox section. Click this <a href="https://www.w3schools.com/css/css3_flexbox.asp">link</a> to see original contents.</em>
+		  </article>
+		  <article>
+			  <h1 class="video-header" id="Video11"></h1>
+			  <iframe width="560" height="315" src="https://www.youtube.com/embed/3qvCMxGEqNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  <h2>Psuedo-"stuff"</h2>
+			  <p>It's time to make your website a little bit more interative, we will use psuedo-classes and psuedo-elements to achieve that goal.</p>
+			  <h2>What is pseudo-classes?</h2>
+			  <p>A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer. They tend to act as if you had applied a class to some part of your document, often helping you cut down on excess classes in your markup, and giving you more flexible, maintainable code.</p>
+			  <h2>Example of Psuedo-classes</h2>
+			  <p>(P.S. you can see all the codes that I did in <a href="https://boyuan12.github.io/DevWithMe/Files/HTMLCSS/Video%2011%20-%20Pseudo-class%20&%20element/index.html">this webpage</a></p>
+			  <p>format of the psuedo-class:</p>
+			  <br /> <code>selector:psuedo-class</code>
+			  <p><code>:first-child</code> This pseudo-class always target the first child element in the article.<p>
+			  <p><code>:last-child</code> It did opposite what last psuedo-class did, it always target the last child element in the article.<p>
+			  <p><code>:only-child</code> This pseudo-class always target the only given child element in the article.<p>
+			  <p><code>:invalid</code> Checks the form input when it's invalid, such as it required an email address but user typed random numbers.<p>
+			  <p><code>:hover</code>This only applies if the user moves their pointer over an element, typically a link.</p>
+			  <p><code>:focus</code>only applies if the user focuses the element using keyboard controls.
+			  </p>
+			  <h2>Psuedo-element</h2>
+			  <p>Psuedo-element is the same way, but instead of ":", you will type "::".</p>
+			  <h2>Combining psuedo-class and -element</h2>
+			  <p><code>p:first-child::first-line</code>This selected first paragraph's first line.</p>
+			  <em>Credit: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements">https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements</a>
 		  </article>
 </main>
   </body>

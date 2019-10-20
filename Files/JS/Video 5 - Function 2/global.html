@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            var myname = "John"; // defined outside of a function, this is a global variable
+            function say_name() {
+                var mydog = "Micky"; // defined inside of a function, this is a local variable
+                alert(myname + " has a dog named " + mydog);
+            }
+            say_name();
+            console.log(myname); // success
+            console.log(mydog); // local variable - unsuccess
+        </script>
+    </body>
+</html>

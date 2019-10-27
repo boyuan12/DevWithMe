@@ -107,7 +107,67 @@
             <li>No length limitation</li>
             <li>No reserve words usage</li>
           </ul>
+					<h2>A little bit on operator</h2>
+					<p>The + operator in JS has 2 usage, one is add two or more strings together, second is to actually add number, just like in regular arithmetic.</p>
         </article>
+				<article id="Video4">
+					<h1>Function 1 | Video 4</h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/oT3DE7BGK80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<h2>function vs function (syntax)</h2>
+					<p>In algebra, you learned a function is something like this: f(x) = 2x + 6, where f means it's a function, x is an input, 2x + 6 is the rule of that function. JS function is similar, to create a function, you will type:</p>
+					<code>function <i>function_name</i>() { }; </code>
+					<p>The style of function's name are same as variable's style. When you name a function, make sure your function's name matches that result, or output of that function.</p>
+					<h2>Basic Function</h2>
+					<p>Click this <a href="https://github.com/boyuan12/DevWithMe/blob/master/JSTutorial/JS/Video%204%20-%20Function%201/function1.html">link</a> to see a simple function.</p>
+					<p>At line 18, you should saw a line of code</p>
+					<code>hello_world();</code>
+					<p>Guess what did it do?</p>
+					<h2>Calling a function</h2>
+					<p>In JS, you must call a function when you want to use. In a form like <i>function_name</i>()</p>
+					<h2>Argument/paramenter</h2>
+					<p>Ever wonder what should be inside of ()? You will put argument/parameter inside of it. For example, if you want to create an variable that you want use in that function, you can put variable name (DON'T put variable keywords) inside. As shown in <a href="https://github.com/boyuan12/DevWithMe/blob/master/JSTutorial/JS/Video%204%20-%20Function%201/function3.html">function3.html</a>.</p>
+					<p>This is similar to the x value, or input in algebra. In JS, when you call this function, make sure you provide correct usage of parameter(s) in the ().</p>
+					<h2>Return</h2>
+					<p>Take a look <a href="https://github.com/boyuan12/DevWithMe/blob/master/JSTutorial/JS/Video%204%20-%20Function%201/function4.html">function4.html</a>. There is a difference compare to function3.html, what is the difference?</p>
+					<p>The difference is in line 10, I added a return statement, this statement change the whole function into a value, by which return stated. (line 13 is optional)</p>
+					<p>If you are still confusing, you may copy the code into your console, and take a look. You should see "You live at least 3650 days." as output.</p>
+				</article>
+				<article id="Video5">
+					<h1>Function 2 | Video 5</h1>
+					<h2>Scope/Context Basics</h2>
+					<p>Scope is the context in which a variable/function is valid, for example, if you declare variable inside of a function, it's only available inside of a function.</p>
+					<p>To demostrate that, click this <a href="../JS/Video 5 - Function 2/global.html">link</a>, then go to your console to see the output.</p>
+					<p>You should see John and an error saying mydog is not defined. That's because mydog is defined inside of that function, it only valid when it's used inside of the function, not valid otherwise.</p>
+				</article>
+				<article id="Video6">
+					<h1>Conditional Statement 1 | Video 6</h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/VsVuOOlCh0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<h2>Real-world example...</h2>
+					<p>	You may have heard of this statement before:
+						"<b>If</b> you review for your test effectively, <b>then</b> you may get better score. <b>Otherwise</b> you will receive a lower score on your test."</p>
+					<p>	Conditional Statement is exactly just that, it's execute different code based on the conditions. But before we actually create some codes, I want to clear some terminology first.</p>
+					<h2>= == ===</h2>
+					<p>= means assign in variable.</p><br>
+					<p>== comparison of equal to (doesn't have to be same type)</p>
+					<p>=== comparison of equal to (must be the same type)</p>
+					<h2>If...</h2>
+					<p>First statement you will learn is if statement, it only work if the condition is true, copy and paste the codes to the console here:</p>
+					<code>const a = 0; if (a === 0) {console.log("a is 0");}</code>
+					<p>You should see a is 0 as output.</p>
+					<h2>If... else ...</h2>
+					<p>This kind of condition also works when if is not true, it's going to execute else. Take a look on following codes:</p>
+					<code>var reviewTest === true; if (reviewTest === true) {console.log("Good score");} else {console.log("Bad Score");}</code>
+					<p>You should saw "Good score" as output.</p>
+					<h2>if... if .. else .. else ...</h2>
+					<p>This is called nested code. Basically, you add another condition inside of if part. Take a look of this code for example: </p>
+					<cod>var reviewTest === true; var efficient = false; if (reviewTest === true) {if (effcient === true){console.log("Good"); } else {console.log("Bad");}} else {console.log("Bad Score");}</code>
+					<p>You should see "bad" as return</p>
+					<h2>if ... else if... else</h2>
+					<p>I didn't mention this in the video, but what this does is if the if statement is false, then it's going to execute else if, if this return false, it will execute else. Try to create a statement on your own.</p>
+				</article>
+				<article id="Video7">
+					<h1>Video 7 | Conditional Statement 2</h1>
+				</article>
 			</main>
   </body>
 </html>

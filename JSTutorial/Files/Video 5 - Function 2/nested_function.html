@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            var myname = "John";
+            function say_name() {
+                var mydog = "Joey";
+                function say_food() {
+                    var myfood = "Pizza"; // local variable, live only inside of say_food function
+                    alert(myname + " has a dog named " + mydog + " and it likes to eat " + myfood);
+                }
+                console.log(myname + " has a dog named " + mydog + " and it likes to eat " + myfood);
+                say_food();
+            }
+            say_name();
+        </script>
+    </body>
+</html>

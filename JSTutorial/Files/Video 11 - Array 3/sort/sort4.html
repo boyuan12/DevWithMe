@@ -1,0 +1,23 @@
+<!--
+	Issue with ordering number
+-->
+
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<script>
+			var fruits = [2, 3, 1, 20];
+			function mysort(first_value, second_value) {
+				if (first_value > second_value) {
+					return 1;
+				} else if (first_value < second_value) {
+					return -1;
+				} else {
+					return 0;
+				}
+			}
+			console.log(fruits.sort(mysort));
+		</script>
+	</body>
+</html>

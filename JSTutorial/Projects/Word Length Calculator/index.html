@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Word Length Calculator</title>
+		<link rel="icon" href="/Users/boyuanliu/Downloads/icon.ico">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+		<h1>Word Length Calculator</h1>
+		<form>
+			<label>Type Words Here:</label>
+			<input type="text" id="text" class="form-control"> <br>
+			<button type="submit" id="button" class="btn btn-primary">Click to see the result</button>
+		</form>
+		<div id="result"></div>
+		<details>
+			<summary>Click to see details</summary>
+			<br><div id="detail"></div>
+		</details>
+		<script>
+			//Step 1: Get the Button element
+			const button = document.getElementById("button");
+			//Step 2: Create function that calculate words' length and words count
+			var onButtonClick = function(event) {
+				event.preventDefault();
+				// Step 2-1: The value of user's input
+				const text = document.getElementById("text").value;
+				// Step 2-2: Store word Count
+				var wordCount = 1;
+				// Step 2-3: Using a loop to update word count based on certain conditions
+				for (let i = 0; i < text.length; i++) {
+					// Step 2-3-1: Find pattern of the numbers of words (HINT: " " & Condition)
+					if (text[i] === " ") {
+						// Step 2-3-2: Update wordCount
+						wordCount++;
+					}
+				}
+				// Step 2-4: Validate user's input
+				if (text === "") {
+					document.getElementById("result").innerHTML = "<i>Did you fill out textbox correctly?</i>";
+				} else {
+					// Step 2-5: Write the Length of the words
+					document.getElementById("result").innerHTML = "The length of your word/sentence is " + text.length;
+					// Step 2-6: Write the word count of the words.
+					document.getElementById("detail").innerHTML = "There are " + wordCount + " words.";
+				}
+			};
+			//Step 3: Call the function when the button clicked
+			button.addEventListener("click", onButtonClick);
+		</script>
+	</body>
+</html>
